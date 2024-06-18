@@ -1,0 +1,3 @@
+" Lancement du serveur local : symfony serve "
+" Pour arrêter le serveur, appuyer sur Ctrl C à partir du terminal. "
+" Remarque Si vous souhaitez passer votre version locale du site en https, vous devez entrez cette commande: "symfony server:ca:install" "

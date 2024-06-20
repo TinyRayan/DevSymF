@@ -1,0 +1,23 @@
+Créer une première entité ou pour simplifier creation de table dans la base que vous venez de creer avec le fichier
+.env.local : " php bin/console make:entity NomEntity "
+
+Ensuite le maker vous demande le nom de la propriété, puis d'autres informations (son type, sa longueur...).
+
+Quand vous avez modifié votre entité, la commande : " php bin/console d:s:u --force " : vous permet de générer les
+tables nécessaires (il faut toujours faire cette commande après l'utilisation ou configuration du Maker pour l'envoyer
+dans votre Base de données)
+
+Pour mettre en place une relation c'est super je vous montre :
+
+exemple : php bin/console make:entity Disc
+
+"Your entity already exists ! So let's add some new fields ! "
+
+New Property name ... :
+> artist
+
+Field Type ... [string]:
+> relation
+
+What class should this entity be related to ? :
+> Artist

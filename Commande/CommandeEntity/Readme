@@ -7,14 +7,22 @@ Quand vous avez modifié votre entité, la commande : " php bin/console d:s:u --
 tables nécessaires (il faut toujours faire cette commande après l'utilisation ou configuration du Maker pour l'envoyer
 dans votre Base de données)
 
-Pour mettre en place une relation c'est super je vous montre :
+Pour mettre en place une relation c'est super on va relié Disc a Artist , je vous montre :
 
-exemple : php bin/console make:entity Disc
+exemple commencons par : php bin/console make:entity Disc
+
+ensuite ceci apparait :
 
 "Your entity already exists ! So let's add some new fields ! "
 
+cela nous dit "holalala sa existe déja comme entité ! ajoutons autre chose !"
+et ducoup sa nous demande quel propriété nous voulons prendre donc nous mettons "artist"
+
 New Property name ... :
 > artist
+
+pourquoi "artist" ? (question que tu te posera peut-etre) c'est parce que tu la appelé comme ca dans ta BDD (base de
+données normalement -> voir image : Commande/CommandeEntity/BDD.png)
 
 Field Type ... [string]:
 > relation
